@@ -1,9 +1,10 @@
-const mongoose=require("mongoose");
+import mongoose from "mongoose"
 
-const connectDB = async () => {
-    await mongoose.connect('mongodb+srv://karthik:9959425223@cluster0.1f9fn.mongodb.net/practice').then(()=>console.log("DataBase Connected"));
-}
-module.exports=connectDB;
-
-// mongodb+srv://karthik:<db_password>@cluster0.1f9fn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-//mongodb+srv://KarthikReddy:9959425223@cluster0.klqgw.mongodb.net/food-delretryWrites=true&w=majority&appName=Cluster0import mongoose from "mongoose";
+const userSchema = new mongoose.Schema({
+    name:{type:String,required:true},
+    email:{type:String,required:true,unique:true},
+    password:{type:String,required:true},
+    userType:{type:String,enum: ["student", "admin", "guard"], default: "student"},
+});
+const userModel = mongoose.models.user || mongoose.model("user", userSchema)
+export default userModel;

@@ -1,0 +1,99 @@
+.container{
+    height: 80vh;
+    width: 90vw;
+    background: #f8f6f4;
+    position: absolute;
+    left:5vw;
+    top:10vh;
+    border-radius: 10px;
+}
+.logo{
+    font-family: "Phudu",serif;
+    font-weight: 500;
+    font-size: 25px;
+    position: absolute;
+    left:2%;
+}
+.exit{
+    font-family: "Phudu",serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: #6a479f;
+}
+.parent{
+    position: absolute;
+    top:10%;
+    left:5%;
+    display: inline;
+    width:90%;
+    height:90%;
+}
+.left{
+    position:absolute;
+    left:0%;
+    top:5%;
+    width:50%;
+    height:90%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text{
+    font-family: 'Courier New', Courier, monospace;
+    width:90%;
+    color: black;
+    font-weight: 500;
+}
+.btns{
+    display: flex;
+    flex-direction: row;
+    margin:10%;
+}
+.login{
+    padding:7px 15px;
+    background: #6a479f;
+    color: white;
+    font-weight: 700;
+    border: none;
+    text-decoration: none;
+    margin-right: 10px;
+    cursor: pointer;
+    display: inline;
+}
+.login:hover{
+    background: white;
+    color: #6a479f;
+}
+.signup{
+    padding:7px 15px;
+    background: white;
+    color: #6a479f;
+    font-weight: 700;
+    border: 2px solid #6a479f;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline;
+}
+.signup:hover{
+    background: #6a479f;
+    color: white;
+}
+.right{
+    position:absolute;
+    right:9%;
+    top:5%;
+    width:40%;
+    height:90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.landingimage{
+    width: 400px;
+    height:200px;
+    object-fit: contain;
+    opacity: 0.5;
+    border-radius: 50px;
+    overflow: hidden;
+}

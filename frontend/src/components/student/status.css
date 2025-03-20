@@ -1,0 +1,71 @@
+/* Container for Centering */
+.status-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Card Styling */
+  .status-card {
+    background: #dfdfdf;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    height:fit-content;
+    font-family: Arial, sans-serif;
+    transition: 0.3s;
+  }
+  .status-card p{
+    margin-top:20px;
+    margin-left: 10px;
+  }
+  .status-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Body Styling */
+  .status-body {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #444;
+  }
+  
+  /* Align right fields */
+  .status-right {
+    float: right;
+  }
+  
+  /* Footer - Status Button */
+  .status-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .status-btn {
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    display: inline-block;
+  }
+  
+  /* Status Colors */
+  .status-btn.pending {
+    background-color: #7d5fff;
+  }
+  
+  .status-btn.accepted {
+    background-color: #28a745;
+  }
+  
+  .status-btn.rejected {
+    background-color: rgb(222, 41, 62);
+  }

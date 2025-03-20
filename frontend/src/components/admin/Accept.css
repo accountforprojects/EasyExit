@@ -1,0 +1,48 @@
+.pass-container {
+    width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.table {
+    width: 100%;
+    overflow: hidden;
+}
+
+.table-row {
+    display: flex;
+    background: #dfdfdf;
+    padding: 12px;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.status {
+    font-weight: 600;
+}
+
+.accepted {
+    color: green;
+}
+
+
+/* Center the message when no accepted passes are found */
+.no-passes {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    margin-top: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .table-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

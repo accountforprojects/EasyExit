@@ -1,0 +1,61 @@
+.pass-container {
+    width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.table {
+    width: 100%;
+    overflow: hidden;
+}
+.maintrow{
+    display: flex;
+    flex-direction: column;
+    background: #dfdfdf;
+    padding: 12px;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin-top: 10px;
+    justify-content: center;
+}
+.table-row {
+    display: flex;
+    flex-direction: row;
+    background: #dfdfdf;
+    padding: 12px;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.status {
+    font-weight: 600;
+}
+
+.accepted {
+    color: green;
+}
+
+/* Add spacing between elements inside .table-row */
+.table-row p {
+    margin: 4px 0;
+}
+
+/* Center the 'No passes' message */
+.no-passes {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    margin-top: 50px;
+}
+.rejectreason {
+    font-weight: bold;
+    color: #333; 
+    font-size: 14px;
+    margin-top: 5px;
+    padding: 5px 0;
+    text-align: center;
+    
+}
