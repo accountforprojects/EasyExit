@@ -1,0 +1,58 @@
+/* Overall container styling */
+.pass-container {
+  width: 800px;
+  margin: auto;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Title styling */
+.title {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Table container */
+.table {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+/* Individual rows */
+.table-row {
+  display: flex;
+  background: #dfdfdf;
+  padding:12px;
+  justify-content: space-evenly;
+  border-radius:10px;
+  transition: 0.3s;
+  margin-top:10px;
+
+}
+
+
+/* Status styling */
+.status {
+  font-weight: 600;
+}
+
+.accepted {
+  color: green;
+}
+
+
+.pending{
+  color:#7d5fff;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .table-header, .table-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

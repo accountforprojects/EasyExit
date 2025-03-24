@@ -1,0 +1,9 @@
+/* Ensuring consistent font size across all browsers */
+html, body {
+    font-size: 16px;
+    font-family: "Phudu", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5;
+}
